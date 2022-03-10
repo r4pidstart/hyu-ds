@@ -5,7 +5,7 @@ int list[SIZE] = {38,27,1,43,3,9,82,10,16,60};
 
 void selectionSort(int* list, int n)
 {
-    int i,j,least,temp;
+    int i,j,least,temp; 
 
     for(i=0; i<n-1; i++)
     {
