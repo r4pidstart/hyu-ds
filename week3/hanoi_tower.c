@@ -22,5 +22,5 @@ int main(void)
     printf("원판의 갯수를 입력하세요.\n");
     int a; scanf("%d", &a);
 
-    printf("총 이동 횟수: %d\n", hanoi(a, 1, 'A', 'B', 'C'));
+    printf("총 이동 횟수: %d\n", hanoi(a, 1, 'A', 'C', 'B'));
 }
