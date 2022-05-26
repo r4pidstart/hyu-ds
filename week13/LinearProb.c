@@ -35,7 +35,7 @@ void addHashTable(elem item, elem ht[])
 {
     int hash=hashFunction(item.key);
 
-    for(int i=hash, cnt=0; cnt < TABLE_SIZE; i=(i+1)%TABLE_SIZE)
+    for(int i=hash, cnt=0; cnt < TABLE_SIZE; i=(i+1)%TABLE_SIZE, cnt++)
     {
         if(ht[i].key[0] == '\0')
         {
@@ -55,7 +55,7 @@ void hashSearch(elem item, elem ht[])
 {
     int hash=hashFunction(item.key);
 
-    for(int i=hash, cnt=0; cnt < TABLE_SIZE; i=(i+1)%TABLE_SIZE)
+    for(int i=hash, cnt=0; cnt < TABLE_SIZE; i=(i+1)%TABLE_SIZE, cnt++)
     {
         if(ht[i].key[0] == '\0')
             break;
